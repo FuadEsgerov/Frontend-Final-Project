@@ -1,0 +1,81 @@
+.info-header{
+    padding: 10px 0;
+    .header-contact{
+        font-size: 0;
+        li:first-child {
+            margin-left: 0px;
+        }
+        li {
+         
+            font-size: 14px;
+            padding: 2px 3px;
+            vertical-align: middle;
+            display: inherit;
+        }
+        li a {
+            color: #fff;
+        }
+        i {
+            margin-right: 8px;
+            vertical-align: middle;
+            font-size: 18px;
+        }
+    }
+    .socialicons{
+        font-size: 0;
+        li {
+            display: inline-block;
+            padding: 2px 3px;
+            
+            a {
+                color: #fff;
+                border-color: #fff;
+                font-size: 16px;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+            }
+        }
+    }
+    .login-apply{
+        
+li{
+    position: relative;
+    padding-left: 15px;
+  a{color: #fff;
+    font-size: 14px;
+}  
+}
+    }
+    .login-apply::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 25px;
+        width: 1px;
+        background-color: #eee;
+    }
+}
+
+.navbar-toggler {
+    float: right;
+    margin: 9px 0;
+    font-size: 28px;
+    transition: all 0.5s ease 0s;
+}
+.navbar-expand-lg .navbar-nav > li > .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 25px 10px;
+    text-transform: uppercase;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #fff;
+    box-shadow: 0 13px 42px 11px rgba(0,0,0,.05);
+    border: 1px solid #eee;
+    margin-top: -1px;
+}

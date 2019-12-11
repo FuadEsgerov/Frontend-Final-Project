@@ -1,0 +1,41 @@
+body {
+	background: #ffffff none repeat scroll 0 0;
+    color: #888888;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+	-webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+h1,h2,h3,h4,h5,h6 {
+	color: #292b2c;
+	font-family: 'Rubik', sans-serif;
+}
+p {
+	color:#888888;
+}
+a {
+	color: #292b2c;
+	text-decoration: none;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+a:hover {
+	color: #FFBC09;
+	text-decoration: none;
+}
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+button {
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+img {
+	max-width: 100%;
+}
+ul,li,ol {
+	margin: 0;
+	padding: 0;
+}
