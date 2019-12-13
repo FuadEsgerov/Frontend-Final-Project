@@ -14,6 +14,10 @@
         }
         li a {
             color: #fff;
+
+        }
+        a:hover{
+            color:  #FFBC09;
         }
         i {
             margin-right: 8px;
@@ -38,6 +42,9 @@
         text-align: center;
         vertical-align: middle;
             }
+            a:hover{
+                color:  #FFBC09;
+            }
         }
     }
     .login-apply{
@@ -47,7 +54,10 @@ li{
     padding-left: 15px;
   a{color: #fff;
     font-size: 14px;
-}  
+} 
+a:hover{
+    color:  #FFBC09;
+} 
 }
     }
     .login-apply::before {
@@ -71,6 +81,7 @@ li{
     font-weight: 600;
     padding: 25px 10px;
     text-transform: uppercase;
+    
 }
 
 .navbar-nav .dropdown-menu {
@@ -79,3 +90,20 @@ li{
     border: 1px solid #eee;
     margin-top: -1px;
 }
+
+    .navbar-expand-lg .navbar-nav .dropdown-item {
+        padding: 8px 25px 8px 10px;
+        color: #ffffff;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    .navbar-nav .dropdown-item {
+        color: #333 !important;}
+        .navbar-expand-lg .attr-nav li .nav-link i {
+            font-size: 20px;
+        }
+
+        @media only screen and (max-width: 991px){.navbar-expand-lg .navbar-nav {
+            display: block;
+            float: right;
+        }} 

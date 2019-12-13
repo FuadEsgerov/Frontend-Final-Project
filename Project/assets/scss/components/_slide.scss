@@ -1,0 +1,45 @@
+.slide-example{min-height: 100vh;
+.carousel-item::before {
+        background-color: rgba(0, 0, 0, 0.40);
+        bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    .banner{
+    background-position: center center; 
+    background-size: cover;
+}
+.carousel-caption{
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.carousel-control-next,.carousel-control-prev {
+    border-radius: 100%;
+}
+}
+
+.carousel-control-next {
+    right: 20px;
+}
+.carousel-control-prev {
+    left: 20px;
+}
+.carousel-control-next, .carousel-control-prev {
+    background-color: rgba(0,0,0,0.5);
+    font-size: 20px;
+    height: 50px;
+    opacity: 0;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50px;
+}
