@@ -58,3 +58,74 @@ ul,li,ol {
 .text-wh * {
     color: #fff;
 }
+.ripple {
+	background-color: #FFFFFF;
+	border-radius: 100%;
+	color: #FFBC09;
+	position: relative;
+	display: inline-block;
+	margin-right: 25px;
+	line-height: 50px;
+	font-size: 18px !important;
+	vertical-align: middle;
+	margin-left: 0;
+	height: 50px;
+    width: 50px;
+	text-align: center;
+}
+.ripple::before,.ripple::after {
+	 -webkit-animation: ripple 1.8s infinite;
+	 -moz-animation: ripple 1.8s infinite;
+	 -o-animation: ripple 1.8s infinite;
+	 animation: ripple 1.8s infinite;
+	 background-color: #ffffff;
+	 border-radius: 100%;
+	 margin: -20px;
+	 bottom: 0px;
+	 content: "";
+	 display: block;
+	 left: 0px;
+	 opacity: 0;
+	 position: absolute;
+	 right: 0px;
+	 top: 0px;
+	 z-index:-1;
+}
+.ripple::before {
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+}
+.ripple::after {
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+@-webkit-keyframes ripple{
+    0%{
+        opacity:0;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    50%{
+        opacity:0.5;
+    }
+	100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+@keyframes ripple{
+    0%{
+        opacity:0;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    50%{
+        opacity:0.5;
+    }
+	100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}

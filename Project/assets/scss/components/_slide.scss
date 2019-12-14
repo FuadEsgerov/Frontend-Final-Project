@@ -1,4 +1,14 @@
 .slide-example{min-height: 100vh;
+   .banner_content h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    vertical-align: bottom;
+   }
+   .banner_content p {
+    
+    font-size: 18px;
+    margin-bottom: 35px;
+}
 .carousel-item::before {
         background-color: rgba(0, 0, 0, 0.40);
         bottom: 0;

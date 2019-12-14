@@ -1,5 +1,5 @@
-.why-choose{
-    color: #F7F7F7;
+.why-choose{ 
+    background-color: #F7F7F7;
     .sectition-title{
         margin-bottom: 16px;
     text-transform: capitalize;
@@ -14,7 +14,7 @@
     transition: all 0.5s ease-in-out;
     box-shadow: 0px 4px 20px rgba(101, 101, 101, 0.1);
     border-radius: 10px;
-    }
+    position: relative;
     .square-item{
         border-radius: 100%;
         display: inline-block;
@@ -23,18 +23,8 @@
         height: 100px;
         width: 100px;
         text-align: center;
-        margin-bottom: 16px;
-       
-        
-        img {
-            padding: 5px;
-            max-width: 60px;
-        }
+        margin-bottom: 15px;
     }
-   
-    
-   
-
     .square-item::before {
         content: "";
         position: absolute;
@@ -48,6 +38,19 @@
         opacity: 0;
         transition: all 0.2s ease-in-out;
     }
+
+        img {
+            padding: 5px;
+            max-width: 60px;
+        }
+    }
+    .square-info:hover {
+        margin-top: 20px;
+    }
+    
+   
+
+   
     .book{
         position: relative;
          h5 {
