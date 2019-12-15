@@ -15,7 +15,7 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
 	color: #292b2c;
-	font-family: 'Rubik', sans-serif;
+	
 }
 p {
 	color:#888888;
@@ -129,3 +129,14 @@ ul,li,ol {
         transform:scale(1)
     }
 }
+.pagination a {
+    border: 2px solid #dee2e6;
+    border-radius: 4px;
+    color: #888888;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 36px;
+    padding: 0;
+}
+

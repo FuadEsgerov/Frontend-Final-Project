@@ -17,7 +17,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #292b2c;
-  font-family: 'Rubik', sans-serif;
 }
 
 p {
@@ -890,6 +889,8 @@ button:focus {
 
 .slide-example .carousel-control-next, .slide-example .carousel-control-prev {
   border-radius: 100%;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .carousel-control-next {
@@ -972,11 +973,6 @@ button:focus {
   margin: 0;
 }
 
-.row {
-  margin-right: 0px;
-  margin-left: 0px;
-}
-
 .row .about-us {
   margin-right: -50px;
   position: relative;
@@ -987,7 +983,7 @@ button:focus {
   padding: 8%;
 }
 
-.row .about-us .list-item {
+.row .about-us .list-item li {
   display: inline-block;
   padding-right: 30px;
 }
@@ -1002,9 +998,12 @@ button:focus {
   top: 0;
 }
 
+.row .img-change {
+  z-index: -1;
+  position: relative;
+}
+
 .row .ripple {
-  bottom: 310px;
-  left: 400px;
   background-color: #FFFFFF;
   border-radius: 100%;
   color: #FFBC09;
@@ -1020,7 +1019,7 @@ button:focus {
   text-align: center;
 }
 
-.row .video_play {
+.row .video-play {
   position: absolute;
   right: 0;
   display: table;
@@ -1223,82 +1222,124 @@ button:focus {
   font-size: 16px;
 }
 
-#gallery {
-  margin-top: 100px;
+#our-gallery {
+  padding: 100px;
 }
 
-#gallery .heading h2 {
-  font-size: 32px;
-  font-weight: 600;
+#our-gallery .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#our-gallery .row .intro {
   text-align: center;
 }
 
-#gallery .heading p {
-  margin-top: 15px;
-  text-align: center;
-  color: #888888;
+#our-gallery .buttons ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px auto;
 }
 
-#gallery .buttons {
-  margin-top: 30px;
-  border-radius: 4px;
+#our-gallery .buttons ul .btn-orange {
+  background-color: orange;
   padding: 5px 25px;
+  display: block;
+  font-size: 16px;
+  text-transform: capitalize;
+  border-radius: 4px;
 }
 
-#gallery .buttons li {
-  display: inline-block;
-  margin: 0 3px;
-}
-
-#gallery .buttons a {
-  color: black;
-  text-decoration: none;
+#our-gallery .buttons ul .btn-wh {
   background-color: #eee;
   padding: 5px 25px;
   display: block;
   font-size: 16px;
+  text-transform: capitalize;
   border-radius: 4px;
 }
 
-#gallery .buttons a:hover {
-  background-color: #FFBC09;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  color: white !important;
+#our-gallery .buttons ul li {
+  margin: 0 10px;
 }
 
-#gallery .row {
+#our-gallery .buttons ul li a {
+  text-decoration: none;
+}
+
+#our-gallery .active {
+  background-color: orange;
+  color: black;
+}
+
+#our-gallery .row {
   padding: 0;
 }
 
-#gallery .gallery-item {
+#our-gallery .gallery-item {
   width: 100%;
 }
 
-#gallery .gallery-item:hover:before {
-  background-color: rgba(0, 0, 0, 0.6);
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  visibility: hidden;
-  top: 0;
-  bottom: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  z-index: 2;
-}
-
-#gallery .gallery-item .item {
+#our-gallery .item {
   float: left;
   margin: 10px 10px;
   z-index: 1;
   cursor: pointer;
+  border-radius: 10px;
 }
 
-#gallery .gallery-item .item img {
+#our-gallery .item:hover a {
+  opacity: 1;
+  z-index: 99;
+  position: relative;
+  top: -34;
+  left: -58%;
+}
+
+#our-gallery .item:before {
+  background-color: black;
+  content: "";
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 99;
   border-radius: 10px;
+}
+
+#our-gallery .item:hover:before {
+  opacity: 0.5;
+}
+
+#our-gallery .item img {
+  border-radius: 10px;
+}
+
+#our-gallery .item a {
+  opacity: 0;
+}
+
+#our-gallery .item span {
+  position: absolute;
+  left: 42%;
+  top: -20px;
+  text-align: center;
+}
+
+#our-gallery .item span h5 {
+  position: absolute;
+  top: 70px;
+  left: -10px;
+  color: white;
 }
 
 #teachers {
@@ -1330,6 +1371,8 @@ button:focus {
   margin-top: 30px;
   border-radius: 10px;
   border: none;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #teachers .card img {
@@ -1370,106 +1413,6 @@ button:focus {
   top: 0;
   left: 0;
   right: 0;
-}
-
-#student-say {
-  padding: 100px;
-}
-
-#student-say .row {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-#student-say .row .heading {
-  text-align: center;
-}
-
-#student-say .row .heading h2 {
-  font-size: 32px;
-  font-weight: 600;
-}
-
-#student-say .row .heading p {
-  font-weight: 300;
-  color: #888888;
-}
-
-#student-say .student-owl-carousel {
-  margin-top: 30px;
-}
-
-#student-say .student-owl-carousel .student-owl-item .item {
-  margin-right: 18px;
-  margin-left: 25px;
-}
-
-#student-say .student-owl-carousel .student-owl-item .item .box {
-  background-color: #fff;
-  -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  padding: 15px 30px 15px 50px;
-  margin: 5px 5px 5px 50px;
-  position: relative;
-  z-index: 1;
-}
-
-#student-say .student-owl-carousel .student-owl-item .item .box:before {
-  content: "\f10e";
-  position: absolute;
-  right: 40px;
-  top: 0;
-  font-family: "Font Awesome 5 Pro";
-  font-size: 190px;
-  line-height: normal;
-  font-weight: 900;
-  z-index: -1;
-  color: rgba(0, 0, 0, 0.02);
-}
-
-#student-say .student-owl-carousel .student-owl-item .item .box .box-image {
-  top: 23px;
-  margin-left: -120px;
-  margin-right: 20px;
-  position: absolute;
-  width: 100%;
-  max-width: 100px;
-}
-
-#student-say .student-owl-carousel .student-owl-item .item .box .box-image img {
-  display: block;
-  width: 100%;
-  border-radius: 5px;
-}
-
-#student-say .student-owl-carousel .student-owl-item .item .box .box-content {
-  overflow: hidden;
-}
-
-#student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-name {
-  text-align: left;
-}
-
-#student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-name h6 {
-  margin-bottom: 8px;
-}
-
-#student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-name span {
-  font-style: italic;
-  color: #FFBC09;
-}
-
-#student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-comment {
-  margin-top: 10px;
-}
-
-#student-say .student-owl-carousel .student-owl-item .item .box .box-content .user-comment p {
-  font-size: 16px;
-  font-weight: 400;
-  color: #888888;
-  text-align: left;
 }
 
 #online-courses {
@@ -1537,20 +1480,23 @@ button:focus {
   margin-top: 100px;
 }
 
-#counter .counter-bg-img {
+.counter-bg-img {
   width: 100%;
   height: 350px;
   background-color: rgba(7, 41, 77, 0.7);
   position: relative;
 }
 
-#counter .counter-bg-img::before {
+.counter-bg-img::before {
   bottom: 0;
   content: "";
   left: 0;
-  position: absolute;
   right: 0;
   top: 0;
+  width: 100%;
+  height: 350px;
+  background-color: rgba(7, 41, 77, 0.7);
+  position: relative;
 }
 
 #counter .counter-bg-img img {
@@ -1673,5 +1619,41 @@ button:focus {
 .upcoming-box .upcoming-content .upcoming-icon li i {
   margin-right: 6px;
   font-size: 14px;
+}
+
+#about {
+  color: #fff;
+}
+
+#about::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+}
+
+#about h1 {
+  font-weight: 700;
+  color: white;
+}
+
+#about ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.li-us::before {
+  display: inline-block;
+  padding-right: .5rem;
+  content: "/";
+  margin-left: 7px;
 }
 /*# sourceMappingURL=style.css.map */
