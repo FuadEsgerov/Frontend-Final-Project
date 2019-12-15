@@ -1,0 +1,28 @@
+.alertbox {
+    z-index: 999;
+    transition: all 0.4s ease 0s;
+
+    .alert {
+
+        background-color: #F6475F;
+
+        .alertbox_content {
+
+            .close {
+
+                margin-left: 15px;
+                font-size: 31px;
+            }
+
+            span {
+                color: #fff;
+                font-weight: bold;
+            }
+
+            a {
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+}

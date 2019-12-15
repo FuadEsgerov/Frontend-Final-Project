@@ -1,0 +1,215 @@
+.btn:focus,.btn:hover,.btn.active {
+	box-shadow: none;
+	outline: medium none;
+}
+button:focus {
+	outline:none;
+}
+.btn {
+	border-width: 2px;
+	cursor: pointer;
+	line-height: normal;
+	padding: 12px 30px;
+	text-transform: capitalize;
+	transition: all 0.5s ease-in-out;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.btn.active:focus, .btn:active:focus {
+	box-shadow: none !important;
+}
+.btn-default {
+	background-color: #FFBC09;
+	border: 2px solid #FFBC09;
+	color: #ffffff !important;
+	padding: 12px 30px;
+}
+.btn-default:hover {
+	background-color: #DF9C00;
+	border-color: #DF9C00;
+	color: #fff;
+}
+.btn-default::before {
+	content: "";
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 100%;
+	width: 2em;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -4.5em;
+	-webkit-transform: skewX(-45deg) translateX(0);
+	transform: skewX(-45deg) translateX(0);
+	transition: all 0.8s ease-in-out;
+}
+.btn-default:hover::before {
+	-webkit-transform: skewX(-45deg) translateX(40em);
+	transform: skewX(-45deg) translateX(40em);
+}
+.btn-black {
+	border: 2px solid #333;
+	background-color: #333;
+	color: #ffffff;
+	padding: 12px 30px;
+}
+.btn-black:hover {
+	background-color: #ffffff;
+	color: #333;
+}
+.btn-outline-white {
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	padding: 18px 12px;
+    border-radius: 50px;
+}
+.btn-outline-white:hover {
+	color: #FFBC09;
+}
+.btn-outline-white::before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	background-color: #fff;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.btn-outline-white::after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+.btn-outline-white:hover::before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+.btn-outline-black {
+	background-color: transparent;
+	border: 2px solid #333;
+	color: #333;
+	padding: 12px 30px;
+}
+.btn-outline-black:hover {
+	color: #fff;
+}
+.btn-outline-black::before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	background-color: #333;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.btn-outline-black::after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+.btn-outline-black:hover::before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+.btn-outline-default {
+	background-color: transparent;
+	border: 2px solid #FFBC09;
+	color: #FFBC09 !important;
+	padding: 12px 30px;
+}
+.btn-outline-default:hover {
+	color: #fff !important;
+}
+.btn-outline-default::before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	background-color: #FFBC09;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.btn-outline-default::after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+.btn-outline-default:hover::before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+.btn-radius,
+.pr-radius {
+	border-radius: 40px !important;
+}
+.btn + .btn {
+	margin-left: 10px;
+}
+.btn i {
+	font-size: 22px;
+	vertical-align: middle;
+	line-height: 1;
+}
+.btn span {
+    font-size: 14px;
+}
+.btn-group-sm > .btn, .btn-sm {
+    padding: 7px 15px;
+}
+.btn-group-lg > .btn, .btn-lg {
+    padding: 14px 35px;
+}
+.btn-xs {
+    padding: 4px 15px;
+    font-size: 12px;
+}
+.btn-md {
+    padding: 12px 30px;
+    font-size: 16px;
+}
+.btn.btn-xs i {
+    font-size: 12px;
+}
+.btn.btn-sm i {
+    font-size: 16px;
+}
+.btn.btn-lg i {
+    font-size: 28px;
+}
