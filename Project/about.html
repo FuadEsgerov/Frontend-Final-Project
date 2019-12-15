@@ -62,7 +62,7 @@
                                 <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                             </ul>
-                            <ul class="login-apply list-unstyled d-flex position-relative ml-1">
+                            <ul style="align-items: center" class="login-apply list-unstyled d-flex position-relative ml-1">
                                 <li>
                                     <a href="#" data-toggle="modal" data-target="#Login">Login</a>
                                 </li>
@@ -190,17 +190,22 @@
                             <li>
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link search-drop" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-search" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-menu search-menu" aria-labelledby="navbarDropdown">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                                        <div class="input-group-append">
+                                            <a href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
-                    <ul class=" list-unstyled navbar-nav attr-nav align-items-center">
-                        <li><a href="javascript:void(0);" class="nav-link search_trigger"><i
-                                    class="fas fa-search"></i></a>
-                            <div class="search-overlay">
-                                <div class="search_wrap">
-                                    <form>
-                                        <input type="text" placeholder="Search" class="form-control" id="search_input">
-                                        <button type="submit" class="search_icon"><i class="fas fa-search"></i></button>
-                                    </form>
+                    
                                 </div>
                             </div>
                         </li>
@@ -544,38 +549,32 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section> 
 
-
-
-
-
-
-
+        <section class="bg-color small-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="text-wh">
+                            <div class="medium_divider d-block d-md-none"></div>
+                            <div class="sectition-title ">
+                                <h2>Get The Coaching Training Today!</h2>
+                            </div>
+                            <p>If you are going to use a passage of embarrassing hidden in the middle of text</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="text-md-right">
+                            <a href="#" class="btn btn-outline-white">Get Started</a>
+                        </div>
+                        <div class="d-block d-md-none"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <section class="bg-color small-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <div class="text-wh">
-                        <div class="medium_divider d-block d-md-none"></div>
-                        <div class="sectition-title ">
-                            <h2>Get The Coaching Training Today!</h2>
-                        </div>
-                        <p>If you are going to use a passage of embarrassing hidden in the middle of text</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="text-md-right">
-                        <a href="#" class="btn btn-outline-white">Get Started</a>
-                    </div>
-                    <div class="d-block d-md-none"></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <footer class="footer bg-dark">
         <div class="top">
@@ -708,6 +707,7 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="assets/owlcarousel/js/owl.carousel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="assets/js/parallax.js"></script>
     <script src="assets/js/main.js"></script>
 
   

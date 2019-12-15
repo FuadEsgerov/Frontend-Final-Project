@@ -185,17 +185,23 @@
                     <li>
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                </ul>
-            </div>
-            <ul class=" list-unstyled navbar-nav attr-nav align-items-center">
-                <li><a href="javascript:void(0);" class="nav-link search_trigger"><i class="fas fa-search"></i></a>
-                    <div class="search-overlay">
-                        <div class="search_wrap">
-                            <form>
-                                        <input type="text" placeholder="Search" class="form-control" id="search_input">
-                                        <button type="submit" class="search_icon"><i class="fas fa-search"></i></button>
-                                    </form>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link search-drop" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu search-menu" aria-labelledby="navbarDropdown">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <a href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
                         </div>
+                    </li>
+                </ul>
+                
+            </div>
+            
                     </div>
                 </li>
             </ul>
@@ -294,9 +300,9 @@
 <!-- SECTION CONTACT INFORMATION START -->
 <section id="contact-information">
     <div class="container">
-        <div class="row">
+        <div style="justify-content: center;" class="row">
             <div class="col-lg-8">
-                <div class="intro" >
+                <div class="intro text-center" >
                     <h2>Contact Information</h2>
                     <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
                         anything embarrassing hidden in the
@@ -338,15 +344,6 @@
     </div>
 </section>
 
-
-
-
-
-
-
-
-
-
 <section class="bg-color small-section">
     <div class="container">
         <div class="row align-items-center">
@@ -368,13 +365,6 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
-
 
 <footer class="footer bg-dark">
     <div class="top">

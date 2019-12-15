@@ -51,6 +51,117 @@
         </div>
     </div>
 <!-- first:alert -->
+<!-- Login -->
+<div class="modal fade lr_popup" id="Login" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content border-0">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="row no-gutters">
+                    <div class="col-lg-5">
+                        <div class="h-100 background_bg radius_5" data-img-src="assets/img/login_img.jpg"
+                            style="background :url(assets/img/login_img.jpg); background-position: center center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="padding">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="login-tab1" data-toggle="tab" href="#login"
+                                        role="tab" aria-controls="login" aria-selected="true">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="signup-tab1" data-toggle="tab" href="#signup" role="tab"
+                                        aria-controls="signup" aria-selected="false">Sign Up</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="login" role="tabpanel">
+                                    <div class="heading_s1 mb-3">
+                                        <h4>Login</h4>
+                                    </div>
+                                    <form method="post" class="login">
+                                        <div class="form-group">
+                                            <input type="text" required="" class="form-control" name="email"
+                                                placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" required="" type="password" name="password"
+                                                placeholder="Password">
+                                        </div>
+                                        <div class="login_footer form-group">
+                                            <a href="#">Lost your password?</a>
+                                            <div class="chek-form mb-3">
+                                                <div class="custome-checkbox">
+                                                    <input class="form-check-input" type="checkbox" name="checkbox"
+                                                        id="exampleCheckbox3" value="">
+                                                    <label class="form-check-label" for="exampleCheckbox3">Remember
+                                                        me</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-default btn-block" name="login">Log
+                                                in</button>
+                                        </div>
+                                    </form>
+                                    <div class="different_login">
+                                        <span> or</span>
+                                    </div>
+                                    <ul class="btn-login list-unstyled text-center">
+                                        <li><a href="#" class="btn btn-facebook"><i
+                                                    class="fab fa-facebook-f"></i>Facebook</a></li>
+                                        <li><a href="#" class="btn btn-google"><i
+                                                    class="fab fa-google-plus"></i>Google</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="signup" role="tabpanel">
+                                    <div class="heading_s1 mb-3">
+                                        <h4>Sign Up</h4>
+                                    </div>
+                                    <form method="post" class="login">
+                                        <div class="form-group">
+                                            <input type="text" required="" class="form-control" name="username"
+                                                placeholder="Username">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" required="" class="form-control" name="email"
+                                                placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" required="" type="password" name="password"
+                                                placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" required="" type="password" name="cpassword"
+                                                placeholder="Confirm Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-default btn-block"
+                                                name="login">Sign Up</button>
+                                        </div>
+                                    </form>
+                                    <div class="different_login">
+                                        <span> or</span>
+                                    </div>
+                                    <ul class="btn-login list-unstyled text-center">
+                                        <li><a href="#" class="btn btn-facebook"><i
+                                                    class="fab fa-facebook-f"></i>Facebook</a></li>
+                                        <li><a href="#" class="btn btn-google"><i
+                                                    class="fab fa-google-plus"></i>Google</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- login -->
 <!-- Header -->
     <header>
         <div class="info-header bg-dark">
@@ -195,16 +306,22 @@
                     <li>
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link search-drop" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu search-menu" aria-labelledby="navbarDropdown">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <a href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <ul class=" list-unstyled navbar-nav attr-nav align-items-center">
-                <li><a href="javascript:void(0);" class="nav-link search_trigger"><i class="fas fa-search"></i></a>
-                    <div class="search-overlay">
-                        <div class="search_wrap">
-                            <form>
-                                        <input type="text" placeholder="Search" class="form-control" id="search_input">
-                                        <button type="submit" class="search_icon"><i class="fas fa-search"></i></button>
-                                    </form>
+            
                         </div>
                     </div>
                 </li>
@@ -324,7 +441,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="text-center animation animated fadeInUp" data-animation="fadeInUp"
-                        data-animation-delay="0.01s" style="animation-delay: 0.01s; opacity: 1;">
+                        data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                         <div class="sectition-title text-center">
                             <h2>Why Choose Eduglobal</h2>
                         </div>
@@ -336,7 +453,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="square-info text-center bg-white animation animated fadeInUp" data-animation="fadeInUp"
-                        data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
+                        data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                         <div class="square-item " style="background-color: #F6475F;">
                             <img src="assets/img/book.png" alt="book">
                         </div>
@@ -349,7 +466,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="square-info text-center bg-white animation animated fadeInUp" data-animation="fadeInUp"
-                        data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
+                        data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                         <div class="square-item " style=" background-color:#FFBC09;">
                             <img src="assets/img/globe.png" alt="book">
                         </div>
@@ -362,7 +479,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="square-info text-center bg-white animation animated fadeInUp" data-animation="fadeInUp"
-                        data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
+                        data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                         <div class="square-item " style="background-color: #B3D369;">
                             <img src="assets/img/instructors.png" alt="book">
                         </div>
@@ -378,6 +495,58 @@
         </div>
     </section>
 <!-- why-choose -->
+ <!-- Most Popular Categories -->
+<section class="small-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center animation animated fadeInUp" data-animation="fadeInUp"
+                    data-animation-delay="0.01s" style="animation-delay: 0.01s; opacity: 1;">
+                    <div class="sectition-title text-center">
+                        <h2>Most Popular Categories</h2>
+                    </div>
+                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                        embarrassing hidden in the middle of text</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.02s"
+                style="animation-delay: 0.02s; opacity: 1;">
+                <div class="owl-carousel owl-theme owl-loaded">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item">
+                                <div class="item">
+                                    <div class="single_categories"> <a href="#" style="background-color: #FFBC09;"> <i
+                                                class="fa fa-book"></i> Academic </a> </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="item">
+                                    <div class="single_categories"> <a href="#" style="background-color: #B3D369"> <i
+                                                class="fa fa-chart-line"></i> Business </a> </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="item">
+                                    <div class="single_categories"> <a href="#" style="background-color: #F6475F"> <i
+                                                class="fa fa-globe"></i> Language </a> </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="item">
+                                    <div class="single_categories"> <a href="#" style="background-color: #F89035"> <i
+                                                class="fa fa-chart-line"></i> Development </a> </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="item">
+                                    <div class="single_categories"> <a href="#" style="background-color: #38DDF7"> <i
+                                                class="fa fa-heartbeat"></i> Healthy Fitness </a> </div>
+                                </div>
+ </section>
+ <!-- Most Popular Categories -->
 <!-- video-section -->
 <section  class="small-section ">
     <div class="container-fluid p-0">
@@ -385,7 +554,7 @@
             <div class="col-md-6">
                 <div class="about-us bg-white ">
                     <div class="animation animated fadeInLeft" data-animation="fadeInLeft"
-                        data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
+                        data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                         <div class="sectition-title">
                             <h2>About Us</h2>
                         </div>
@@ -433,7 +602,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="text-center animation animated fadeInUp" data-animation="fadeInUp"
-                        data-animation-delay="0.01s" style="animation-delay: 0.01s; opacity: 1;">
+                        data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                         <div class="sectition-title text-center">
                             <h2>Our Courses</h2>
                         </div>
@@ -444,8 +613,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.02s"
-                        style="animation-delay: 0.02s; opacity: 1;">
+                    <div class="box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="2s"
+                        style="animation-delay: 2s; opacity: 1;">
                         <div class="box-img">
                             <a href="#"><img src="assets/img/course_img1.jpg" alt="course_img1"></a>
                         </div>
@@ -478,8 +647,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.02s"
-                        style="animation-delay: 0.02s; opacity: 1;">
+                    <div class="box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="2s"
+                        style="animation-delay: 2s; opacity: 1;">
                         <div class="box-img">
                             <a href="#"><img src="assets/img/course_img2.jpg" alt="course_img1"></a>
                         </div>
@@ -512,8 +681,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.02s"
-                        style="animation-delay: 0.02s; opacity: 1;">
+                    <div class="box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="2s"
+                        style="animation-delay: 2s; opacity: 1;">
                         <div class="box-img">
                             <a href="#"><img src="assets/img/course_img3.jpg" alt="course_img1"></a>
                         </div>
@@ -546,8 +715,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.02s"
-                        style="animation-delay: 0.02s; opacity: 1;">
+                    <div class="box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="2s"
+                        style="animation-delay: 2s; opacity: 1;">
                         <div class="box-img">
                             <a href="#"><img src="assets/img/course_img4.jpg" alt="course_img1"></a>
                         </div>
@@ -580,8 +749,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.02s"
-                        style="animation-delay: 0.02s; opacity: 1;">
+                    <div class="box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="2s"
+                        style="animation-delay: 2s; opacity: 1;">
                         <div class="box-img">
                             <a href="#"><img src="assets/img/course_img5.jpg" alt="course_img1"></a>
                         </div>
@@ -614,8 +783,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.02s"
-                        style="animation-delay: 0.02s; opacity: 1;">
+                    <div class="box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="2s"
+                        style="animation-delay: 2s; opacity: 1;">
                         <div class="box-img">
                             <a href="#"><img src="assets/img/course_img6.jpg" alt="course_img1"></a>
                         </div>
@@ -712,7 +881,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
-                <div class="text-center animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.01s" style="animation-delay: 0.01s; opacity: 1;">
+                <div class="text-center animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                     <div class="sectition-title text-center">
                         <h2>Upcoming events</h2>
                     </div>
@@ -722,7 +891,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-4">
-                <div class="upcoming-box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
+                <div class="upcoming-box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                     <div class="upcoming-img">
                         <a href="#"><img src="assets/img/event_img1.jpg" alt="event_img1"></a>
                         <div class="upcoming-date">
@@ -741,7 +910,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="upcoming-box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
+                <div class="upcoming-box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                     <div class="upcoming-img">
                         <a href="#"><img src="assets/img/event_img2.jpg" alt="event_img1"></a>
                         <div class="upcoming-date">
@@ -760,7 +929,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="upcoming-box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
+                <div class="upcoming-box animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                     <div class="upcoming-img">
                         <a href="#"><img src="assets/img/event_img3.jpg" alt="event_img1"></a>
                         <div class="upcoming-date">
@@ -992,7 +1161,7 @@
         </div>
         <div class="row ">
             <div class="col-lg-3">
-                <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
+                <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                     <img src="assets/img/team_img1.jpg" class="card-img-top" alt="">
                     <div class="card-content">
                         <h5>
@@ -1003,7 +1172,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
+                <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                     <img src="assets/img/team_img2.jpg" class="card-img-top" alt="">
                     <div class="card-content">
                         <h5>
@@ -1014,7 +1183,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
+                <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                     <img src="assets/img/team_img3.jpg" class="card-img-top" alt="">
                     <div class="card-content">
                         <h5>
@@ -1025,7 +1194,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
+                <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                     <img src="assets/img/team_img4.jpg" class="card-img-top" alt="">
                     <div class="card-content">
                         <h5>
@@ -1039,15 +1208,87 @@
     </div>
 </section>
 <!-- Teachers -->
+<!-- student say -->
+<section id="student-say" class="mt-5">
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="student-say-text text-center">
+                    <h2>Student Say!</h2>
+                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything embarrassing hidden in the middle of text</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 ">
+            <div class="col-md-12 carousel_slider">
+                <div style="display: inline-flex;" class="slider">
+                    <div class="slide " style="max-width: 540px; margin-right: 30px;">
+                        <div class="student-img">
+                            <img src="assets/img/client_img1.jpg" alt="">
+                        </div>
+                        <div class="student-text">
+                            <div class="user">
+                                <h6>Lissa Castro</h6>
+                                <span class="orange"><i>Co-Founder</i></span>
+                            </div>
+                            <div class="user-text">
+                                <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit
+                                    voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide " style="max-width: 540px; margin-right: 30px;">
+                        <div class="student-img">
+                            <img src="assets/img/client_img2.jpg" alt="">
+                        </div>
+                        <div class="student-text">
+                            <div class="user">
+                                <h6>Lissa Castro</h6>
+                                <span class="orange"><i>Co-Founder</i></span>
+                            </div>
+                            <div class="user-text">
+                                <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit
+                                    voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis
+                                    et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide " style="width: 540px; margin-right: 30px;">
+                        <div class="student-img">
+                            <img src="assets/img/client_img3.jpg" alt="">
+                        </div>
+                        <div class="student-text">
+                            <div class="user">
+                                <h6>Lissa Castro</h6>
+                                <span class="orange"><i>Co-Founder</i></span>
+                            </div>
+                            <div class="user-text">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, quaeillo inventore veritatis et quasi architecto
+                                    beatae vitae dicta sunt explicabo.</p>
+
+                            </div>
+                        </div>
+                    </div>
 
 
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+<!-- student say -->
 <!-- OUR BLOG -->
 <section class="our-blog">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="sectition-title text-center animation animated fadeInUp" data-animation="fadeInUp"
-                    data-animation-delay="0.01s" style="animation-delay: 0.01s; opacity: 1;">
+                    data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                     <h2>Our Blog</h2>
                 </div>
             </div>
@@ -1055,7 +1296,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-4">
                 <div class="our-blog-post animation animated fadeInUp" data-animation="fadeInUp"
-                    data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
+                    data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                     <div class="our-blog-img">
                         <a href="#">
                             <img src="assets/img/blog_small_img1.jpg" alt="blog_small_img1">
@@ -1072,7 +1313,7 @@
                     </div>
                     <div class="our-blog-footer bg-white">
                         <ul class="d-flex list-unstyled calendar-chat">
-                            <li><a href="#"><i class="far fa-calendar"></i>15 May, 2019</a></li>
+                            <li><a href="#"><i class="far fa-calendar"></i>15 May, 229</a></li>
                             <li style="margin-left: 20px"><a href="#"><i class="far fa-comments"></i>2 Comment</a>
                             </li>
                         </ul>
@@ -1081,7 +1322,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="our-blog-post animation animated fadeInUp" data-animation="fadeInUp"
-                    data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
+                    data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                     <div class="our-blog-img">
                         <a href="#">
                             <img src="assets/img/blog_small_img1.jpg" alt="blog_small_img1">
@@ -1098,7 +1339,7 @@
                     </div>
                     <div class="our-blog-footer bg-white">
                         <ul class="d-flex list-unstyled calendar-chat">
-                            <li><a href="#"><i class="far fa-calendar"></i>15 May, 2019</a></li>
+                            <li><a href="#"><i class="far fa-calendar"></i>15 May, 229</a></li>
                             <li style="margin-left: 20px"><a href="#"><i class="far fa-comments"></i>2 Comment</a>
                             </li>
                         </ul>
@@ -1107,7 +1348,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="our-blog-post animation animated fadeInUp" data-animation="fadeInUp"
-                    data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
+                    data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                     <div class="our-blog-img">
                         <a href="#">
                             <img src="assets/img/blog_small_img1.jpg" alt="blog_small_img1">
@@ -1124,7 +1365,7 @@
                     </div>
                     <div class="our-blog-footer bg-white">
                         <ul class="d-flex list-unstyled calendar-chat">
-                            <li><a href="#"><i class="far fa-calendar"></i>15 May, 2019</a></li>
+                            <li><a href="#"><i class="far fa-calendar"></i>15 May, 229</a></li>
                             <li style="margin-left: 20px"><a href="#"><i class="far fa-comments"></i>2 Comment</a>
                             </li>
                         </ul>
@@ -1139,8 +1380,8 @@
         <div class="row">
             <div class="col-12">
                 <div style="margin-top: 30px;" class="text-center animation animated fadeInUp"
-                    data-animation="fadeInUp" data-animation-delay="0.04s"
-                    style="animation-delay: 0.04s; opacity: 1;">
+                    data-animation="fadeInUp" data-animation-delay="2"
+                    style="animation-delay: 2; opacity: 1;">
                     <div class="view-button"></div>
                     <a href="#" class="btn btn-default">View All Blog <i class="fas fa-arrow-right"></i></a>
                 </div>
@@ -1156,7 +1397,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="text-center animation animated fadeInUp" data-animation="fadeInUp"
-                    data-animation-delay="0.05s" style="animation-delay: 0.05s; opacity: 1;">
+                    data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;">
                     <div class="sectition-title text-center">
                         <h2>Our Client</h2>
                     </div>
@@ -1165,8 +1406,8 @@
 
                 </div>
             </div>
-            <div class="col-md-12 animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.05s"
-                style="animation-delay: 0.05s; opacity: 1;">
+            <div class="col-md-12 animated fadeInUp" data-animation="fadeInUp" data-animation-delay="2s"
+                style="animation-delay: 2s; opacity: 1;">
                 <div class="owl-carousel owl-theme owl-loaded">
                     <div class="owl-stage-outer">
                         <div class="owl-stage">
@@ -1280,7 +1521,7 @@
                                     <div class="recent-post-content">
                                         <h6 class="recent-post-content-title"><a href="#">Lorem ipsum dolor sit amet,
                                                 consectetur</a></h6>
-                                        <span class="recent-post-content-date">April 14, 2018</span>
+                                        <span class="recent-post-content-date">April 14, 228</span>
                                     </div>
                                 </div>
                             </li>
@@ -1292,7 +1533,7 @@
                                     <div class="recent-post-content">
                                         <h6 class="recent-post-content-title"><a href="#">Lorem ipsum dolor sit amet,
                                                 consectetur</a></h6>
-                                        <span class="recent-post-content-date">April 14, 2018</span>
+                                        <span class="recent-post-content-date">April 14, 228</span>
                                     </div>
                                 </div>
                             </li>
@@ -1304,7 +1545,7 @@
                                     <div class="recent-post-content">
                                         <h6 class="recent-post-content-title"><a href="#">Lorem ipsum dolor sit amet,
                                                 consectetur</a></h6>
-                                        <span class="recent-post-content-date">April 14, 2018</span>
+                                        <span class="recent-post-content-date">April 14, 228</span>
                                     </div>
                                 </div>
                             </li>
@@ -1344,7 +1585,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <p class="copyright m-md-0 text-center text-md-left">© 2018 All Rights Reserved by Eduglobal.
+                        <p class="copyright m-md-0 text-center text-md-left">© 228 All Rights Reserved by Eduglobal.
                         </p>
                     </div>
                     <div class="col-md-6">
