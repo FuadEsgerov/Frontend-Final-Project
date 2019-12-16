@@ -1,5 +1,6 @@
 # Frontend-Final-Project
-css	last	19 hours ago
-js	last	19 hours ago
-owlcarousel	last	19 hours ago
-scss	last	19 hours ago  bunlar assets icinde olmalidi 
+//css	last///	
+//js	last	///
+//owlcarousel	last	///
+//scss	last	//// bunlar assets icinde olmalidi 
+assets icinde olanlar duzgun deyil
