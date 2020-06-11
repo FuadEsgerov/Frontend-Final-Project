@@ -142,3 +142,19 @@ a:hover{
             -webkit-transition: all 0.7s;
             transition: all 0.7s;
         }
+        .search-menu {
+            margin-left: -140px;
+            z-index: 1;
+            padding: 8px;
+            width: 200px;
+        }
+        .search-menu a {
+            position: absolute;
+            top: 7px;
+            right: 7px;
+        }
+        .dropdown-menu.show {
+            display: block;
+        }
+        
+        

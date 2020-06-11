@@ -22,40 +22,6 @@ $(document).ready(function(){
 	);
   });
 
-
-  $(function() {
-	
-    function ckScrollInit(items, trigger) {
-        items.each(function() {
-            var ckElement = $(this),
-                AnimationClass = ckElement.attr('data-animation'),
-                AnimationDelay = ckElement.attr('data-animation-delay');
-
-            ckElement.css({
-                '-webkit-animation-delay': AnimationDelay,
-                '-moz-animation-delay': AnimationDelay,
-                'animation-delay': AnimationDelay,
-                opacity: 0
-            });
-
-            var ckTrigger = (trigger) ? trigger : ckElement;
-
-            ckTrigger.waypoint(function() {
-                ckElement.addClass("animated").css("opacity", "1");
-                ckElement.addClass('animated').addClass(AnimationClass);
-            }, {
-                triggerOnce: true,
-                offset: '90%',
-            });
-        });
-    }
-
-    ckScrollInit($('.animation'));
-    ckScrollInit($('.staggered-animation'), $('.staggered-animation-wrap'));
-
-});
-
-
 $('.content-popup').magnificPopup({
     type: 'inline',
     preloader: true,
@@ -83,12 +49,14 @@ $('.counter').counterUp({
     });
     
  // student say corusel
- $('.student-owl-carousel').slick({
-    arrows: false,
-    infinite: true,
-    slidesToShow: 2,
+ $('.slider').slick({
+    slidesToShow:2,
     slidesToScroll: 1,
-    autoplay: true
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    centerMode: true,
+    
 });
 
 // Isotope

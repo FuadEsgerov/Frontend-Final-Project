@@ -1,5 +1,13 @@
 #about {
-    color: #fff
+    color: #fff;
+    background-image :url(../img/about_bg.jpg);
+    padding: 100px 0;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
 #about::before {
@@ -31,89 +39,88 @@
 }
 
 
-
-// #student-say {
-//     position: relative;
-//     max-width: 100%;
-//     overflow: hidden;
-    
-//   }
+#student-say {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 600px;
+  }
   
-//   #student-say .slick-active {
-//     width: 560px !important;
-//     margin-left: 10px !important;
-//   }
+  #student-say .slick-active {
+    width: 560px !important;
+    margin-left: 10px !important;
+  }
   
-//   #student-say button {
-//     opacity: 0;
-//   }
+  #student-say button {
+    opacity: 0;
+  }
   
-//   #student-say .student-say-text {
-//     position: relative;
-//     z-index: 999;
-//   }
+  #student-say .student-say-text {
+    position: relative;
+    z-index: 999;
+  }
   
-//   #student-say .student-say-text h2 {
-//     color: #292b2c;
-//     font-family: "Rubik", sans-serif;
-//     font-size: 2rem;
-//     margin-bottom: 1rem;
-//     font-weight: 700;
-//     line-height: 1.2;
-//   }
+  #student-say .student-say-text h2 {
+    color: #292b2c;
+    font-family: "Rubik", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
   
-//   #student-say .student-say-text p {
-//     color: #888888;
-//     margin-top: 0;
-//     margin-bottom: 1rem;
-//   }
+  #student-say .student-say-text p {
+    color: #888888;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
   
-//   #student-say .slider {
-//     transition: all 2s;
-//     -webkit-transition: all 2s;
-//     -moz-transition: all 2s;
-//     margin: 0 auto;
-//   }
+  #student-say .slider {
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    margin: 0 auto;
+  }
   
-//   #student-say .slider .slide {
-//     transition: all 2s;
-//     -webkit-transition: all 2s;
-//     -moz-transition: all 2s;
-//     position: relative;
-//     background-color: #fff;
-//     -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
-//             box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
-//     border-radius: 10px;
-//     padding: 30px 30px 30px 50px;
-//     margin: 5px 5px 5px 50px;
-//     position: relative;
-//     z-index: 1;
-//     width: 470px !important;
-//   }
+  #student-say .slider .slide {
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    position: relative;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px 30px 30px 50px;
+    margin: 5px 5px 5px 50px;
+    position: relative;
+    z-index: 1;
+    width: 400px !important;
+  }
   
-//   #student-say .slider .slide .student-img {
-//     float: left;
-//     margin-right: 20px;
-//     margin-left: -100px;
-//     border-radius: 5px;
-//   }
+  #student-say .slider .slide .student-img {
+    float: left;
+    margin-right: 20px;
+    margin-left: -100px;
+    border-radius: 5px;
+  }
   
-//   #student-say .slider .slide .student-img img {
-//     border-radius: 10px;
-//   }
+  #student-say .slider .slide .student-img img {
+    border-radius: 10px;
+  }
   
-//   #student-say .slider .slide .student-text .user h6 {
-//     font-family: "Rubik", sans-serif;
-//     font-weight: bold;
-//   }
+  #student-say .slider .slide .student-text .user h6 {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+  }
   
-//   #student-say .slider .slide .student-text .user-text {
-//     margin-left: 20px;
-//   }
+  #student-say .slider .slide .student-text .user-text {
+    margin-left: 20px;
+  }
   
-//   #student-say .slider .slide .student-text .user-text p {
-//     color: #888888;
-//     margin-top: 0;
-//     margin-bottom: 1rem;
-//     font-family: "Roboto", sans-serif;
-//   }
+  #student-say .slider .slide .student-text .user-text p {
+    color: #888888;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
